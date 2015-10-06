@@ -24,35 +24,20 @@ describe('Fizzbuzz', function () {
 
 var fizzBuzz1 = {
 	esFizz : function esmultiplode3 () {
-		if ((this.number % 3) === 0)
-			return true;
-		else
-			return false;
+		return ((this.number % 3) === 0)
 	},
 	esBuzz : function esmultiplode5 (){
 		return ((this.number % 5) === 0)	
 	},
-	number: 0
-
-	// mensaje: ""
-	// esFizz: function esMultiploDe(number, multiple){
-	// 			return if number%multiple===0 
-	// 		}
-				
+	esFizzBuzz: function esMultiploDe3Y5(){
+		return ((this.number%3)===0)&&(this.number%5===0)
+	},
+	number: 0	
 };
-
-// var esmultiplode3 = function (n) {
-// 	return n % 3 === 0;
-// };
-
-// var esmultiplode5 = function (n) {
-// 	return n % 5 === 0;
-// };
 
 var fizzbuzz = function (n) {
 	fizzBuzz1.number = n;
-	
-	if (fizzBuzz1.esFizz() && fizzBuzz1.esBuzz()) {
+	if (fizzBuzz1.esFizzBuzz()) {
 		return "Fizz Buzz"
 	}
 	
