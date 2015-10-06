@@ -35,6 +35,10 @@ var fizzBuzz1 = {
 	number: 0	
 };
 
+function prreba(){
+	alert("prueba");
+}
+
 var fizzbuzz = function (n) {
 	fizzBuzz1.number = n;
 	if (fizzBuzz1.esFizzBuzz()) {
