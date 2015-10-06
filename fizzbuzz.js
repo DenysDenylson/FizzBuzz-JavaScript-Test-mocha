@@ -23,6 +23,13 @@ describe('Fizzbuzz', function () {
 	});
 });
 
+var fizzBuzz = {	
+	mensaje: ""
+	esFizz: function esMultiploDe(number, multiple){
+				return if number%multiple===0 
+			}
+}
+
 var esmultiplode3 = function (n) {
 	return n % 3 === 0;
 };
