@@ -45,10 +45,6 @@ var fizzBuzz1 = {
 // 	return n % 3 === 0;
 // };
 
-// var esmultiplode5 = function (n) {
-// 	return n % 5 === 0;
-// };
-
 var fizzbuzz = function (n) {
 	fizzBuzz1.number = n;
 	
