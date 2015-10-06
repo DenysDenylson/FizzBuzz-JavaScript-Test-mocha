@@ -50,3 +50,7 @@ var fizzbuzz = function (n) {
 
 	return fizzBuzz1.number;
 };
+
+var aquilesvaesa = function (){
+	alert("Hola que tal");
+}
