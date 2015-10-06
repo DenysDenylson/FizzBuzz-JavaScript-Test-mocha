@@ -22,17 +22,33 @@ describe('Fizzbuzz', function () {
 	});
 });
 
-var fizzBuzz1 = {
+var objectFizzBuzz = {
+	number: 0,
+	message: "",
+	getMessage: function getMsj(){
+		return this.message;
+	},
 	esFizz : function esmultiplode3 () {
-		return ((this.number % 3) === 0)
+		if (this.number%3 === 0){
+			this.message = "Fizz";
+		}
 	},
 	esBuzz : function esmultiplode5 (){
-		return ((this.number % 5) === 0)	
+		if (this.number%5 === 0){
+			this.message = "Buzz";
+		}
 	},
 	esFizzBuzz: function esMultiploDe3Y5(){
-		return ((this.number%3)===0)&&(this.number%5===0)
+		if ((this.number%3 ===0 )&&(this.number%5 === 0)){
+			this.message = "Fizz Buzz"
+		}
 	},
-	number: 0	
+	fizzBuzz: function fizzBuzzGenerate(){
+		this.esFizz();
+	    this.esBuzz();
+	    this.esFizzBuzz();
+		return this.getMessage();
+	}
 };
 
 function prreba(){
@@ -40,19 +56,9 @@ function prreba(){
 }
 
 var fizzbuzz = function (n) {
-	fizzBuzz1.number = n;
-	if (fizzBuzz1.esFizzBuzz()) {
-		return "Fizz Buzz"
-	}
-	
-	if (fizzBuzz1.esFizz()) {
-		return "Fizz";
-	}
-	if (fizzBuzz1.esBuzz()) {
-		return "Buzz";
-	}
-
-	return fizzBuzz1.number;
+	objectFizzBuzz.number=n;
+	objectFizzBuzz.message=objectFizzBuzz.number.toString();
+	return objectFizzBuzz.fizzBuzz();
 };
 
 var aquilesvaesa = function (){
