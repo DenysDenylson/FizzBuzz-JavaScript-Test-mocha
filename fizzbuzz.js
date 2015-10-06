@@ -54,3 +54,5 @@ var fizzbuzz = function (n) {
 
 	return fizzBuzz1.number;
 };
+
+var lista = ["hola", "mundo"];
