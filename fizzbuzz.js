@@ -23,26 +23,33 @@ describe('Fizzbuzz', function () {
 	});
 });
 
-var fizzBuzz = {	
-	mensaje: ""
-	esFizz: function esMultiploDe(number, multiple){
-				return if number%multiple===0 
-			}
-}
+var fizzBuzz1 = {
 
-var esmultiplode3 = function (n) {
-	return n % 3 === 0;
+	get : function esmultiplode3 (n) {
+		return n % 3 === 0;
+	}
+	
+
+	// mensaje: ""
+	// esFizz: function esMultiploDe(number, multiple){
+	// 			return if number%multiple===0 
+	// 		}
+				
 };
+
+// var esmultiplode3 = function (n) {
+// 	return n % 3 === 0;
+// };
 
 var esmultiplode5 = function (n) {
 	return n % 5 === 0;
 };
 
 var fizzbuzz = function (n) {
-	if (esmultiplode3(n) && esmultiplode5(n)) {
+	if (fizzbuzz1.get(n) && esmultiplode5(n)) {
 		return "Fizz Buzz"
 	}
-	if (esmultiplode3(n)) {
+	if (fizzbuzz1.get(n)) {
 		return "Fizz";
 	}
 	if (esmultiplode5(n)) {
